@@ -1,3 +1,8 @@
+#This webscraping code is designed to spider data from ca.gov about reservoir levels.
+#The user inputs a reservoir code from this site (https://cdec.water.ca.gov/misc/daily_res.html)
+#Along with a starting date and a number of months from the starting date.
+#The program reads html with BS4, cleans the data, takes the resulting water levels, and then averages them.
+
 # Import necessary libraries
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
